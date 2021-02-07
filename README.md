@@ -5,7 +5,7 @@
 - Basically, we focus on "authentication bypass" and then "remote code execution".
 - We develop fully automated "single-click exploitation" scripts.
 - In principle, we apply whitebox analysis for vulnerability discovery.
-- We utilize blackbox analysis identification of available functionalities.
+- We utilize blackbox analysis for identification of available functionalities.
 
 ## Learning objectives
 
