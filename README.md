@@ -1,4 +1,4 @@
-# CS571 - Web App Vulnerability Discovery &amp; Exploit Development
+Web App Vulnerability Discovery &amp; Exploit Development
 
 ## Scope
 - In this course, we are learning how to exploit "chained vulnerabilities" to get shell.
@@ -26,7 +26,7 @@
     - SST injection
     - Deserialization
 
-## Schedule
+## CS571 Schedule
 
 <details>
 
