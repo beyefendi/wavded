@@ -1,11 +1,12 @@
 # Web App Vulnerability Discovery &amp; Exploit Development
 
-## Scope
-- In this course, we are learning how to exploit "chained vulnerabilities" to get shell.
+## Perspective
+
+- In this course, we are learning how to exploit "chained vulnerabilities" to grant shell.
 - Basically, we focus on "authentication bypass" and then "remote code execution".
 - We develop fully automated "single-click exploitation" scripts.
-- In principle, we apply whitebox analysis for vulnerability discovery.
-- We utilize blackbox analysis for identification of available functionalities.
+- In principle, we perform blackbox analysis for identification of available functionalities .
+- Then, we apply whitebox analysis for vulnerability discovery.
 
 ## Learning objectives
 
@@ -30,7 +31,7 @@
 
 <details>
 
-  <summary>Week 0x01 | Blind Boolean SQLi & File Upload</summary>
+  <summary>Week 0x01 | Blind Boolean SQLi & Bypass session token & File upload</summary>
 
 - **Credentials**
   - Weak input sanitization (i.e. overriding $addslashes() for vulnerability!)
@@ -48,6 +49,6 @@
   - Bypass file extension filter
   - Upload shell
   - Automate full process
-  - Get shell
+  - Gain unauthorized privileged shell access
 
 </details>
