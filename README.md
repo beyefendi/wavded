@@ -52,3 +52,22 @@
   - Gain unauthorized privileged shell access
 
 </details>
+
+<details>
+
+  <summary>Week 0x02 | Blind boolean SQLi & Type juggling & File upload</summary>
+
+- **Credentials**
+  - Same as Week 1
+  - Dump unique member_id and account creation_date
+- **Authentication bypass**
+  - Allowing user e-mail update without authentication
+  - Loose comparisons results in the execution of implicit data type conversions
+  - Type conversion for "scientific exponential number notation"
+  - Magic hash values
+  - Comparing only first n char of a hash value
+  - Brute force
+- **Remote code execution**
+  - Same as Week 1
+
+</details>
