@@ -88,7 +88,7 @@
   - Time-based blind sqli
   - Dump username
   - Dump token of password change
- **Authentication bypass**
+- **Authentication bypass**
   - Token is written to database (not a session token)
   - Token is not generated based on time
   - Change password via token
