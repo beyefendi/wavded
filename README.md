@@ -10,15 +10,19 @@
 
 ## Learning objectives
 
-- Environmental settings for whitebox analysis (PHP, MySQL, VSCode debugger)
+- Environmental settings for whitebox analysis
+  - PHP, MySQL, VSCode, xdebug debugger
+  - Java, PostgreSQL, JD-GUI decompiler, process explorer
 - Identification of potential vulnerabilities to help authentication bypass
   - Analyze publicly accessible webpages
     - Identification of user input fields
     - Identification of application user roles
-    - Blind boolean SQLi
+    - Boolean-based blind SQLi
+    - Time-based blind SQLi
 - Identification of potential vulnerabilities for authentication bypass
   - Analyze login process
     - Lack of session token validation
+    - Insecure password forgot mechanism
 - Identification of potential vulnerabilities for code execution
   - Analyze functionalities of the application
     - File upload
@@ -31,7 +35,7 @@
 
 <details>
 
-  <summary>Week 0x01 | Blind Boolean SQLi & Bypass session token & File upload</summary>
+  <summary>Week 0x01 | Blind boolean SQLi & Bypass session token & File upload</summary>
 
 - **Credentials**
   - Weak input sanitization (i.e. overriding $addslashes() for vulnerability!)
@@ -69,5 +73,32 @@
   - Brute force
 - **Remote code execution**
   - Same as Week 1
+
+</details>
+
+<details>
+
+  <summary>Week 0x03 | Blind time-based SQLi & File upload</summary>
+
+- **Credentials**
+  - No authentication control (isAuthenticated()) for wiewItem.php
+  - Logic error: Lack of die() function usage (Although 302 redirection, code flow continues)
+  - Escaping quote is not bullet proof
+  - SQL parameters aren't surrounded with quote
+  - Time-based blind sqli
+  - Dump username
+  - Dump token of password change
+ **Authentication bypass**
+  - Token is written to database (not a session token)
+  - Token is not generated based on time
+  - Change password via token
+  - Login by changed password
+- **Remote code execution**
+  - Upload folder is under web root
+  - No mimes control for updateItem.php
+  - Bypass file extension filter (.phar)
+  - Upload shell
+  - Automate full process
+  - Gain unauthorized privileged shell access
 
 </details>
