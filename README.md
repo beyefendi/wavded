@@ -2,9 +2,11 @@
 
 ## Perspective
 
-- In this course, we are learning how to exploit "chained vulnerabilities" to grant shell.
+- In this course, we focus on logical vulnerabilities that many web scanners fail to detect.
+- We aim to discover a series of vulnerabilities that can only-together lead to system compromise.
+- We are learning how to exploit "chained vulnerabilities" to grant shell.
 - Basically, we focus on "authentication bypass" and then "remote code execution".
-- We develop fully automated "single-click exploitation" scripts.
+- We develop fully automated "single-click" exploitation scripts.
 - In principle, we perform blackbox analysis for identification of available functionalities .
 - Then, we apply whitebox analysis for vulnerability discovery.
 
