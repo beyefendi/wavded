@@ -104,3 +104,37 @@
   - Gain unauthorized privileged shell access
 
 </details>
+
+<details>
+
+  <summary>Week 0x04 | Insecure random & XXE</summary>
+
+- **Authentication bypass**
+  - java.util.Random() function is vulnerable
+  - Identifying EPOCH range (timestamp & Date header)
+  - Timezone issues
+  - Generate list of possible tokens
+  - Start spraying attempt from the beginning or end or ?
+  - Send request until finding the valid token (throttling or lockout ?)
+  - Cannot login with the credentials set, but wait
+- **Remote code execution**
+  - Finding API documentations (sample requests/responses)
+  - Bypass API Basic Authentication
+  - Bypass API Basic Authentication
+  - XML parser configuration is vulnerable
+  - Bypassing XML parser errors
+  - XML character escaping
+  - CDATA + wrapper
+  - External entitiy
+  - XML entity for reading file content
+  - Read web app server credentials
+  - Read web db server credentials
+  - Connect HSQLDB
+  - Create a funtion to query system information
+  - Create a SP for file upload
+  - Minimize jsp cmd shell to fit in 1KB restriction
+  - Upload jsp cmd shell
+  - Download jsp reverse shell via cmd shell
+  - Popping reverse shell
+</details>
+
