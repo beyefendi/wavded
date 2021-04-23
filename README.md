@@ -5,9 +5,9 @@
 - In this course, we focus on logical vulnerabilities that many web scanners fail to detect.
 - We aim to discover a series of vulnerabilities that can only-together lead to system compromise.
 - We are learning how to exploit "chained vulnerabilities" to grant shell.
-- Basically, we focus on "authentication bypass" and then "remote code execution".
+- We are interested in "authentication bypass" and then "remote code execution".
 - We develop fully automated "single-click" exploitation scripts.
-- In principle, we perform blackbox analysis for identification of available functionalities .
+- In principle, we perform blackbox analysis for identification of available functionalities.
 - Then, we apply whitebox analysis for vulnerability discovery.
 
 ## Learning objectives
@@ -34,6 +34,46 @@
     - Deserialization
 
 ## CS571 Schedule
+
+<details>
+  <summary>Week 0x00 | Setting up environment</summary>
+
+- **VM**
+  - Kali, Ubuntu
+- **Exploit development tools**
+  - VSCode
+    - Python3, NodeJS, Java, PHP, C#
+  - Reversing
+    - JD-GUI Java decompiler
+    - dnSpy .NET debugger
+  - jar_builder.sh
+  - python3 -m http.server 80
+  - nc -nlvp 9090
+- **Traffic analysis tools**
+  - openvpn without typing creds
+  - /etc/hosts
+  - SSH (SOCKS + forwarding)
+  - BurpSuite
+    - Add to scope + Show only inscope items
+    - Request handling
+    - Invisible proxying
+  - FoxyProxy
+    - Blacklists
+    - Use enabled proxies
+- **Methodology**
+  - Enable application logging
+  - Enable database query logging
+  - Static source code analysis tools
+  - Browse webpages
+  - Identify unauthenticated code sections
+  - Identify user input sanitization mechanism
+  - Identify SQL statement building mechanism
+  - Identify dangerous function usage i.e. eval()
+  - Analyze authentication functions i.e. password reset, remember me, etc.
+  - Analyze promising functions i.e. file upload, backup etc. 
+  - Debug (+ print statements)
+
+</details>
 
 <details>
 
@@ -137,4 +177,3 @@
   - Download jsp reverse shell via cmd shell
   - Popping reverse shell
 </details>
-
